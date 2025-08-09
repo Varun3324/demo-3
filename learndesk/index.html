@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#7c3aed" />
+    <meta name="description" content="LearnDesk — an immersive learning platform for college students. Don’t just learn. Visualize." />
+    <title>LearnDesk — Don’t Just Learn. Visualize.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Poppins:wght@500;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">
+          <span class="brand-mark">
+            <img class="logo-img" src="./public/assets/logo.png" alt="LearnDesk logo" onerror="this.style.display='none'" />
+          </span>
+          <span class="brand-text" aria-label="LearnDesk">
+            <span class="brand-line brand-line--top">LEARN</span><span class="brand-line brand-line--bottom">DESK</span>
+          </span>
+        </a>
+        <nav class="main-nav">
+          <a href="#features">Features</a>
+          <a href="#courses">Courses</a>
+          <a href="#why">Why LearnDesk</a>
+          <a class="btn btn--sm btn--glass" href="#cta">Get Started</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 class="headline parallax" data-depth="0.15">
+              Don’t Just Learn. <span class="gradient-text">Visualize</span>.
+            </h1>
+            <p class="subhead parallax" data-depth="0.25">
+              LearnDesk turns complex concepts into interactive visuals. Motion-powered scenes, animated notes, and hands-on labs designed for college courses.
+            </p>
+            <div class="hero-cta">
+              <a href="#cta" class="btn btn--primary">Start Free</a>
+              <a href="#features" class="btn btn--ghost">See Features</a>
+              <button id="enable-motion" class="btn btn--glass" title="Enable motion sensors for parallax">Enable Motion</button>
+            </div>
+            <div class="hero-stats">
+              <div class="stat"><strong>50K+</strong><span>visual interactions</span></div>
+              <div class="stat"><strong>1,500+</strong><span>topics covered</span></div>
+              <div class="stat"><strong>4.9/5</strong><span>student rating</span></div>
+            </div>
+          </div>
+          <div class="hero-visual parallax" data-depth="0.1">
+            <div class="orb orb--lg"></div>
+            <div class="orb orb--md"></div>
+            <div class="orb orb--sm"></div>
+            <div class="floating-cards">
+              <div class="float-card" data-tilt>
+                <h3>3D Calculus</h3>
+                <p>Rotate vector fields. Visualize integrals.</p>
+              </div>
+              <div class="float-card" data-tilt>
+                <h3>Physics Lab</h3>
+                <p>Simulate forces with motion control.</p>
+              </div>
+              <div class="float-card" data-tilt>
+                <h3>Bio Explorer</h3>
+                <p>Zoom into cells with animated layers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="container">
+          <h2 class="section-title">Built for deep understanding</h2>
+          <div class="features-grid">
+            <article class="feature reveal">
+              <div class="feature-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M4 5h16v14H4z" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M9 12l3-3 3 3-3 3-3-3z" fill="currentColor"/>
+                </svg>
+              </div>
+              <h3>Interactive Visuals</h3>
+              <p>Every concept becomes a scene you can drag, tilt, and explore. Works with mouse and device motion.</p>
+            </article>
+
+            <article class="feature reveal">
+              <div class="feature-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M12 7v10" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <h3>Motion-powered Labs</h3>
+              <p>Use your phone’s gyroscope to control experiments and simulations in real-time.</p>
+            </article>
+
+            <article class="feature reveal">
+              <div class="feature-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <h3>Animated Notes</h3>
+              <p>Beautiful, animated note cards that grow with your understanding and connect across topics.</p>
+            </article>
+
+            <article class="feature reveal">
+              <div class="feature-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M4 4h16v8H4z" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M7 18h10" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <h3>Progress Insights</h3>
+              <p>Smart analytics highlight what to study next, with streaks and milestones that keep you motivated.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="courses" id="courses">
+        <div class="container">
+          <h2 class="section-title">Popular interactive courses</h2>
+          <div class="course-cards">
+            <article class="course-card reveal" data-tilt>
+              <div class="course-thumb thumb--math"></div>
+              <div class="course-body">
+                <h3>Calculus Visualized</h3>
+                <p>Explore limits, derivatives, and integrals in motion.</p>
+                <a href="#cta" class="btn btn--sm btn--primary">Start</a>
+              </div>
+            </article>
+
+            <article class="course-card reveal" data-tilt>
+              <div class="course-thumb thumb--physics"></div>
+              <div class="course-body">
+                <h3>Physics Playground</h3>
+                <p>Experiment with forces, waves, and optics.</p>
+                <a href="#cta" class="btn btn--sm btn--primary">Start</a>
+              </div>
+            </article>
+
+            <article class="course-card reveal" data-tilt>
+              <div class="course-thumb thumb--bio"></div>
+              <div class="course-body">
+                <h3>Biology Explorer</h3>
+                <p>Traverse cells to ecosystems with layered visuals.</p>
+                <a href="#cta" class="btn btn--sm btn--primary">Start</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="why" id="why">
+        <div class="container">
+          <h2 class="section-title">Why students love LearnDesk</h2>
+          <div class="why-grid">
+            <div class="why-item reveal">
+              <h4>See the invisible</h4>
+              <p>Turn abstract formulas into visual intuition. Learning clicks faster when you can see it.</p>
+            </div>
+            <div class="why-item reveal">
+              <h4>Made for college</h4>
+              <p>Aligned to real syllabi with topics across STEM and beyond.</p>
+            </div>
+            <div class="why-item reveal">
+              <h4>Built-in motivation</h4>
+              <p>Streaks, spotlights, and achievable goals keep you moving.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="cta">
+        <div class="container">
+          <div class="cta-card reveal" data-tilt>
+            <h2>Ready to visualize your learning?</h2>
+            <p>Join LearnDesk free. Upgrade anytime.</p>
+            <form class="cta-form" onsubmit="event.preventDefault(); document.getElementById('cta-success').classList.add('show');">
+              <input type="email" placeholder="Email address" required />
+              <button class="btn btn--primary" type="submit">Create account</button>
+            </form>
+            <div id="cta-success" class="cta-success" role="status">Thanks! We’ll be in touch.</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="brand-text brand-text--small">LearnDesk</span>
+          <span class="tagline">Don’t Just Learn. Visualize.</span>
+        </div>
+        <div class="footer-links">
+          <a href="#features">Features</a>
+          <a href="#courses">Courses</a>
+          <a href="#why">About</a>
+          <a href="#cta">Get Started</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
