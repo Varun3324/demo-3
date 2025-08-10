@@ -1,0 +1,6 @@
+/* Minimal styles for Simran Boutique components */
+.logo { height: 40px; }
+.shade-swatch { width: 28px; height: 28px; border-radius: 6px; border: 1px solid rgba(0,0,0,.06); cursor: pointer; box-shadow: inset 0 0 0 1px rgba(255,255,255,.6); }
+.shade-swatch.selected { outline: 2px solid #111; outline-offset: 2px; }
+.rotator { transition: transform .6s ease; }
+.rotator:hover { transform: rotate(8deg) scale(1.02); }
